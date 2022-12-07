@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NCDOT Road Networks</title>
+  <title>Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">Potential NCDOT Locations</div>
+  <div id="map-title">NCDOT Roadway Networks Project Map</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -188,7 +188,8 @@ var fieldRecon = new L.Icon({
 	  
   L.marker([34.762345525955006, -76.52538376224861], {icon: fieldRecon}).addTo(map) // EDIT marker coordinates
   .bindPopup("FR17"); // EDIT pop-up text message
-	  
+
+legend.addTo(map);
    
   </script>
 </body>
